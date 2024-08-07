@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Website Developer - New Bright English Public School</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <script>
+
+		setTimeout(function() {
+		  document.getElementById('loader-container').classList.add('hidden');
+		}, 3000);
+	  </script>
+  <style>
+    .banner {
+      background: #f28123;
+      color: white;
+      text-align: center;
+      padding: 50px 0;
+      position: relative;
+    }
+    .banner h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .banner p {
+      font-size: 1.2rem;
+    }
+    .banner .illustration {
+      width: 150px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    .form-section {
+      padding: 50px 0;
+      background-color: #f9f9f9;
+    }
+    .form-title {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #f28123;
+    }
+    .form-group label {
+      color: #f28123;
+    }
+    .btn-primary {
+      background-color: #f28123;
+      border: none;
+    }.loader-container {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			background-color: #f28123;
+			z-index: 9999;
+		  }
+
+		  .illustration {
+			width: 200px; /* Adjust the size of the illustration */
+			margin-bottom: 20px;
+		  }
+
+		  .welcome-message {
+			font-size: 24px;
+			color: #fff;
+			margin: 0;
+		  }
+
+		  .hidden {
+			display: none;
+		  }
+	</style>
+</head>
+
+<body>
+
+	<div class="loader-container" id="loader-container">
+		<img src="images/loader.png" alt="Welcome Illustration" class="illustration">
+		<p class="welcome-message">Welcome to New Bright English Public School</p>
+	  </div>
+  <!-- Full-Width Banner -->
+  <section class="banner">
+    <div class="container">
+      <img src="https://cdni.iconscout.com/illustration/premium/thumb/developer-4268348-3560991.png?f=webp" class="illustration" alt="Illustration">
+      <h1>Contact Website Developer</h1>
+      <p>If you have any questions or need assistance, please fill out the form below to contact the developer.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="form-section">
+    <div class="container">
+      <h2 class="form-title">Contact Form</h2>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="a7d2e969-640f-45b8-aea8-d0573832d62a">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" name="name" placeholder="Enter your name">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" name="email" placeholder="Enter your email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" class="form-control" name="subject" placeholder="Enter the subject">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" name="message" rows="5" placeholder="Enter your message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </section>
+  <script>
+		document.oncontextmenu = function () {
+				return false;
+			  };
+
+			  document.addEventListener('keydown', function (event) {
+				if (event.keyCode === 123) { // F12 key
+					event.preventDefault(); // Prevent the default action (opening developer tools)
+					return false;
+				}
+			});
+
+			</script>
+
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script>
+		document.onkeydown = function(e) {
+				if (e.ctrlKey &&
+					(e.keyCode === 67 ||
+					 e.keyCode === 86 ||
+					 e.keyCode === 85 ||
+					 e.keyCode === 117)) {
+					return false;
+				} else {
+					return true;
+				}
+		};
+		$(document).keypress("u",function(e) {
+		  if(e.ctrlKey)
+		  {
+		return false;
+		}
+		else
+		{
+		return true;
+		}
+		});
+		</script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
